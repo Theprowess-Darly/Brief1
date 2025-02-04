@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4" defer></script>
+    <title>Home</title>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline text-green-500">
-        Hello world!
-      </h1>
+<!-- BODY -->
+<body class="width:75% mx-auto">
+    <!-- HEADER -->
+    <header class="justify-between items-center py-5 bg-white">
+        <section class="flex justify-between items-center mx-6  px-9">
+            <div>
+                <img src="./assets/img/logo.png" alt=" logo greentech solutions">
+            </div>
+            <div class="navitems font-medium px-4 text-base">
+                <ul class="flex justify-between items-center">
+                    <li class="mx-6 font-bold text-xl text-green-600"><a href="#">Acceil</a></li>
+                    <li class="mx-6"><a href="#">A propos</a></li>
+                    <li class="mx-6"><a href="#">Services</a></li>
+                    <li class="mx-6"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="bg-green-600 hover:bg-green-350 text-white font-bold py-2 px-4 rounded-full">
+                    Ecrivez nous
+                </button>                
+            </div>
+        </section>
+    </header>  
+
+    <!-- MAIN -->
+
+             <!-- hero -->
+    <section class="hero flex justify-between bg-green-100 items-center ">
+        <div class="heroimg h-130 w-2/3">
+            <img  src="./assets/img/hero/hero-img.png" class="object-cover w-full h-full" alt="hero image">
+        </div>
+        <div class="hero-text px-10 items-center bg-green-100 montserat w-1/3">
+            <div>
+                <h1 class="font-base text-5xl py-2 text-center"> Réinventez l'avenir avec des solutions technologiques 
+                <span class="text-green-800 text-center">durables</span> et innovantes.</h1>
+            </div>
+            <div class="flex pt-12 pl-28">
+                <button class="flex justify-center bg-green-700 hover:bg-green-350 text-white font-bold py-2 px-4 rounded-full">
+                    Ecrivez nous
+                </button>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section> 
+        <h4>Nos services</h4>
+
+    </section>
+
+
+
     
 </body>
 </html>
