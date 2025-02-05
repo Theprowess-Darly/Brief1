@@ -1,63 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <title>Home</title>
+    <style>
+        body { font-family: 'Roboto', sans-serif, 'trebuchet MS'; }
+    </style>
 </head>
-<!-- BODY -->
-<body class="width:75% mx-auto">
+
+<body class="bg-white text-gray-800">
     <!-- HEADER -->
-    <header class="justify-between items-center py-5 bg-white">
-        <section class="flex justify-between items-center mx-6  px-9">
-            <div>
-                <img src="./assets/img/logo.png" alt=" logo greentech solutions">
+    <header class="fixed w-full shadow-md bg-white">
+        <section class="container mx-auto flex justify-between items-center py-4  px-3">
+            <div class="flex items-center">
+                <img src="./assets/img/logo.png" class="h-12" height="60" width="170" alt=" logo greentech solutions">
             </div>
-            <div class="navitems font-medium px-4 text-base">
-                <ul class="flex justify-between items-center">
-                    <li class="mx-6 font-bold text-xl text-green-600"><a href="#">Acceil</a></li>
-                    <li class="mx-6"><a href="#">A propos</a></li>
-                    <li class="mx-6"><a href="#">Services</a></li>
-                    <li class="mx-6"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <button class="bg-green-600 hover:bg-green-350 text-white font-bold py-2 px-4 rounded-full">
-                    Ecrivez nous
-                </button>                
-            </div>
+            <nav class="space-x-6">
+                <a class="text-green-600 text-xl font-bold" href="#">
+                    Accueil
+                </a>
+                <a class="text-gray-600" href="#">
+                    À propos
+                </a>
+                <a class="text-gray-600" href="#">
+                    Services
+                </a>
+                <a class="text-gray-600" href="#">
+                    Contact
+                </a>
+            </nav>
+            <button class="bg-green-600 duration-800 ease-out hover:bg-green-350 text-white font-bold py-2 px-5 rounded-full">
+                    Ecrivez-nous
+            </button>         
         </section>
     </header>  
 
     <!-- MAIN -->
 
-             <!-- hero -->
-    <section class="hero flex justify-between bg-green-100 items-center ">
-        <div class="heroimg h-130 w-2/3">
-            <img  src="./assets/img/hero/hero-img.png" class="object-cover w-full h-full" alt="hero image">
-        </div>
-        <div class="hero-text px-10 items-center bg-green-100 montserat w-1/3">
-            <div>
-                <h1 class="font-base text-5xl py-2 text-center"> Réinventez l'avenir avec des solutions technologiques 
-                <span class="text-green-800 text-center">durables</span> et innovantes.</h1>
+    <!-- hero -->
+    <section class="bg-gray-100 w-full py-15">
+        <div class="container py-16 mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3 h-130 duration-800 ease-out">
+                <img  src="./assets/img/hero/hero-img.png" class="mx-auto mb-6 md:mb-0 w-full h-full" alt="GreenTech Solutions hero image">
             </div>
-            <div class="flex pt-12 pl-28">
-                <button class="flex justify-center bg-green-700 hover:bg-green-350 text-white font-bold py-2 px-4 rounded-full">
-                    Ecrivez nous
-                </button>                
-            </div>
-        </div>
+            <div class="md:w-1/3 text-center md:text-left md:pl-12 items-center ">
+                <div>
+                    <h1 class="font-base text-5xl py-6 text-center"> Réinventez l'avenir avec des solutions technologiques 
+                    <span class="text-green-800 text-center">durables</span> et innovantes.</h1>
+                </div>
+                <div class="flex pt-34 pl-28">
+                    <button class="flex justify-center animate-bounce duration-800 ease-out bg-green-700 hover:bg-green-350 text-white font-bold py-2 px-4 rounded-full">
+                        Ecrivez nous
+                    </button>                
+                </div>
+            </div>  
+        </div>        
     </section>
 
     <!-- Services -->
-    <section> 
-        <h4>Nos services</h4>
+    <section class="py-12"> 
+        <h4 class="text-green-800 font-medium pl-20">Nos services</h4>
+        <div class="flex space-x-4 items-center justify-between py-5 px-10">
+            <div class="flex items-center justify-between shadow-md bg-green-100 rounded-lg p-6">
+                <div class="flex items-center bg-green-100 rounded-lg p-6">
+                    <img src="./assets/img/icons/turbines.png" alt="Wind Turbine" class=" w-8 h-8 mr-4">  </img>  
+                    <div class="">
+                        <h3 class="text-xl font-bold text-center text-gray-800">Conception d'appareils <br>éco-responsables</h3>
+                        <p class="text-gray-800 text-center mt-2">
+                        Nous proposons des solutions intelligentes pour <br>
+                        réduire la consommation d'énergie, améliorer <br>
+                        l'efficacité des infrastructures et diminuer <br>
+                        l'empreinte carbone, tout en garantissant des <br>
+                        économies sur le long terme.
+                         </p>
+                    </div>
+                </div>                 
+            </div>
 
+            <div class="flex items-center justify-between shadow-md bg-green-100 rounded-lg p-6">
+                <div class="flex items-center bg-green-100 rounded-lg p-6">
+                    <img src="./assets/img/icons/processor.png" alt="processor" class=" w-8 h-8 mr-4">  </img>  
+                    <div class="">
+                        <h3 class="text-xl font-bold text-center text-gray-800">Optimisation énergétique</h3>
+                        <p class="text-gray-800 text-center mt-2">
+                            Nous développons des produits technologiques <br>
+                            utilisant des matériaux durables et des processus <br>
+                            de fabrication respectueux de l'environnement, <br>
+                            afin de minimiser leur impact écologique <br>
+                            tout en optimisant leur performance.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="flex items-center justify-between shadow-md bg-green-100 rounded-lg p-6">
+                <div class="flex items-center bg-green-100 rounded-lg p-6">
+                    <img src="./assets/img/icons/renouvelable.png" alt="renouvelable" class=" w-8 h-8 mr-4">  </img>  
+                    <div class="">
+                        <h3 class="text-xl font-bold text-center text-gray-800">Energies renouvelables</h3>
+                        <p class="text-gray-800 text-center mt-2">
+                            Nous fournissons des solutions sur mesure en <br>
+                            énergies renouvelables, comme l’installation <br>
+                            de panneaux solaires et de systèmes éoliens, <br>
+                            pour favoriser l’indépendance énergétique et <br>
+                            réduire l'empreinte écologique de votre entreprise.
+                        </p>
+                    </div>
+                </div>     
+            </div>  
+                         
+        </div>             
     </section>
 
+    <!-- Projets -->
+    <section class="bg-gray-100 py-12">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img alt="Installation de panneaux solaires" class="mb-4" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/bnslTxyP64AAaYNVthQ1WYOrdSeTIKBTCe1EVaS1eNQ.jpg"
+                        width="400" />
+                    <h2 class="text-xl font-bold mb-2">
+                        Installation de panneaux solaires pour une usine
+                    </h2>
+                    <p>
+                        Une solution clé en main pour réduire les coûts énergétiques et l'empreinte carbone de votre
+                        entreprise.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img alt="Système de gestion énergétique" class="mb-4" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/uJYJILJWHXUOsDY5VgBAaC6uSvqOTpXb8EQg5xOLRlc.jpg"
+                        width="400" />
+                    <h2 class="text-xl font-bold mb-2">
+                        Système de gestion énergétique pour un bâtiment intelligent
+                    </h2>
+                    <p>
+                        Optimisez la consommation d'énergie de votre bâtiment grâce à des technologies de pointe.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img alt="Réduction de l'empreinte carbone" class="mb-4" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/nsB4uS_IWTet1sz6vV4-O7M8z2z8TVlIVpjLzZBbAZw.jpg"
+                        width="400" />
+                    <h2 class="text-xl font-bold mb-2">
+                        Réduction de l'empreinte carbone dans des chaînes de production
+                    </h2>
+                    <p>
+                        Des solutions pour rendre vos processus de production plus écologiques et durables.
+                    </p>
+                </div>
+            </div>
+    </section>  
+    
+     <!-- Testimonial -->
+     <section class="flex justify-center py-12">
+        <div class="container mx-auto text-center">
+            <img alt="Benson Will" class="mx-auto rounded-full mb-4" height="150"
+                src="./assets/img/testimonial/team3.jpg"
+                width="150" />
+            <h2 class="text-xl font-bold mb-2">
+                Adams Smith
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, <br>
+                 consectetur illum facere. <br>
+                 Lorem ipsum dolor sit amet, <br>
+                 consectetur illum facere.
+            </p>
+        </div>
+        <div class="container mx-auto text-center">
+            <img alt="Benson Will" class="mx-auto rounded-full mb-4" height="150"
+                src="./assets/img/testimonial/Godcares.png"
+                width="150" />
+            <h2 class="text-xl font-bold mb-2">
+                Godcares Diangha
+            </h2>
+            <p class="text-center">
+                Forever Loved and Remembered, <br>
+                consectetur illum facere. <br>
+                Lorem ipsum dolor sit amet, <br>
+                consectetur illum facere.
+            </p>
+        </div>
+        <div class="container mx-auto text-center">
+            <img alt="Benson Will" class="mx-auto rounded-full mb-4" height="150"
+                src="https://storage.googleapis.com/a1aa/image/Rw9i4XFe5TAURdpmFtQrrdQQ3Y0lkf5ooVHwmIplQn8.jpg"
+                width="150" />
+            <h2 class="text-xl font-bold mb-2">
+                Benson Will
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, <br>
+                 consectetur illum facere. <br>
+                 Lorem ipsum dolor sit amet, <br>
+                 consectetur illum facere.
+            </p>
+        </div>
+    </section>
 
-
+ <!-- Footer -->
+ <footer class="bg-green-600 text-white py-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+            <img alt="GreenTech Solutions Logo" class="mb-4" height="50"
+                src="https://storage.googleapis.com/a1aa/image/xnATjolw6imc8d30-dhLusjfYOdHYH1GCdgPkZPWpIg.jpg"
+                width="150" />
+            <p>
+                Boulevard de la liberté; Akwa Douala
+            </p>
+            <p>
+                +237 00000000
+            </p>
+            <p>
+                contact@greentechsolutions.net
+            </p>
+            <div class="flex space-x-4 mt-4">
+                <a href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">
+                Recrutements
+            </h3>
+            <p>
+                Mentions Légales
+            </p>
+            <p>
+                Confidentialité des données
+            </p>
+            <p>
+                Politique transparente
+            </p>
+        </div>
+        <div class="text-center md:text-right">
+            <button class="bg-white text-green-600 animate-bounce duration-800 ease-out px-6 py-3 rounded-full">
+                Contactez-nous
+            </button>
+            <h3 class="text-xl font-bold mb-4">
+                parteneuriat
+            </h3>
+            <p>
+                appel à candidature
+            </p>
+            <p>
+                FAQ
+            </p>
+            <p>
+               notre historique
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-6">
+        <p>
+            Designed by: TheProwess-Darly
+        </p>
+    </div>
+</footer>
     
 </body>
 </html>
