@@ -11,37 +11,38 @@
         body { font-family: 'Roboto', sans-serif, 'trebuchet MS'; }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="text-gray-800">
   <!-- HEADER -->
-  <header class="fixed w-full shadow-md bg-white">
-    <section class="container mx-auto flex justify-between items-center py-4  px-3">
-        <div class="flex items-center">
-            <img src="../assets/img/logo.png" class="h-12" height="60" width="170" alt=" logo greentech solutions">
-        </div>
-        <nav class="space-x-6">
-            <a class="text-gray-600" href="../index.html">
-                Accueil
-            </a>
-            <a class="text-green-600 text-xl font-bold" href="#">
-                À propos
-            </a>
-            <a class="text-gray-600" href="#">
-                Services
-            </a>
-            <a class="text-gray-600" href="#">
-                Contact
-            </a>
-        </nav>
-        <button class="bg-green-600 duration-800 ease-out hover:bg-green-350 text-white font-bold py-2 px-5 rounded-full">
-                Ecrivez-nous
-        </button>         
+
+  <header class="fixed w-full shadow-xl bg-white">
+    <section class="container mx-auto flex justify-between items-center py-3  px-3">
+            <div class="flex items-center">
+                <img src="../assets/img/logo.png" class="h-12" height="60" width="170" alt=" logo greentech solutions">
+            </div>
+            <nav class="hidden md:block md:space-x-6">
+                <a class="text-gray-600" href="../index.html">Accueil</a>
+                <a class="text-green-600 text-xl font-bold" href="./About.html">À propos</a>
+                <a class="text-gray-600" href="./services.html">Services</a>
+                <a class="text-gray-600" href="./contact.html">Contact</a>
+            </nav> 
+            <button class="bg-green-900 duration-800 ease-out hover:bg-green-350 text-white font-bold py-2 px-6 rounded-full">
+                    Ecrivez-nous
+            </button>
     </section>
+    <div class="md:hidden">
+        <nav class="flex justify-between w-full p-4">
+            <a class="text-gray-600" href="../index.html">Accueil</a>
+            <a class="text-green-600 text-xl font-bold" href="./About.html">À propos</a>
+            <a class="text-gray-600" href="./services.html">Services</a>
+            <a class="text-gray-600" href="./contact.html">Contact</a>
+        </nav>
+    </div>
   </header> 
   
   <!-- historique -->
-  <section class="bg-gray-100 py-25">
+  <section class="bg-green-100 py-25">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 rounded-lg shadow-xl">
             <img alt="mission" class="mb-4" height="50"
                 src="../assets/img/about/mission.png"
                 width="400" />
@@ -56,7 +57,7 @@
                 Eaque corporis deserunt ratione at magni.
             </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 rounded-lg shadow-xl">
             <img alt="Système de gestion énergétique" class="mb-4" height="100"
                 src="../assets/img/about/vision.png"
                 width="400" />
@@ -74,12 +75,12 @@
                 placeat quidem cupiditate eveniet!
             </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="bg-white p-6 rounded-lg shadow-xl">
             <img alt="Réduction de l'empreinte carbone" class="mb-4" height="100"
                 src="../assets/img/about/valeurs.png"
                 width="400" />
             <h2 class="text-xl font-bold mb-2">
-        
+                Nos Valeurs
             </h2>
             <p>
                 Lorem ipsum dolor, sit amet 
@@ -95,12 +96,103 @@
     </div>
 </section>  
 
+<!-- Stats -->
+<section class="flex justify-center items-center bg-grey-100 py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">
+            Nos chiffres
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptates. Quisquam, voluptates.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-2">
+                    +10000
+                </h3>
+                <p>
+                    Clients satisfaits
+                </p>
+            </div>
+            <div class="bg-green-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-2">
+                    +3500
+                </h3>
+                <p>
+                    Projets réalisés
+                </p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-2">
+                    +500
+                </h3>
+                <p>
+                    Employés
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- team -->
+<section class="flex justify-center items-center bg-gray-100 py-25">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">
+            Notre équipe
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptates. Quisquam, voluptates.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white p-6 rounded-lg shadow-2xl">
+                <img alt="Membre de l'équipe" class="mb-4 rounded-2xl justify-self-center" height="100"
+                    src="../assets/img/team/team1.jpg"
+                    width="100" />
+                <h3 class="text-xl font-bold mb-2">
+                    John Doe
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptates. Quisquam, voluptates.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-2xl">
+                <img alt="Membre de l'équipe" class="mb-4 rounded-2xl justify-self-center" height="100"
+                    src="../assets/img/team/team2.jpg"
+                    width="100" />
+                <h3 class="text-xl font-bold mb-2">
+                    Jane Doe
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptates. Quisquam, voluptates.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-2xl">
+                <img alt="Membre de l'équipe" class="mb-4 justify-self-center rounded-xl" height="100"
+                    src="../assets/img/team/team4.jpg"
+                    width="100" />
+                <h3 class="text-xl font-bold mb-2">
+                    Jean Doe
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptates. Quisquam, voluptates.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
- <footer class="bg-green-600 text-white py-12">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div>
-            <img alt="GreenTech Solutions Logo" class="mb-4" height="50"
+ <footer class="bg-green-900 text-white py-12">
+    <div class="container flex justify-center items-center mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="justify-self-center text-center md:justify-self-start">
+            <img alt="GreenTech Solutions Logo" class="mb-6 justify-self-center md:justify-self-start" height="50"
                 src="https://storage.googleapis.com/a1aa/image/xnATjolw6imc8d30-dhLusjfYOdHYH1GCdgPkZPWpIg.jpg"
                 width="150" />
             <p>
@@ -112,7 +204,7 @@
             <p>
                 contact@greentechsolutions.net
             </p>
-            <div class="flex space-x-4 mt-4">
+            <div class="flex justify-self-center space-x-4 mt-4">
                 <a href="#">
                     <i class="fab fa-facebook-f">
                     </i>
@@ -131,7 +223,7 @@
                 </a>
             </div>
         </div>
-        <div>
+        <div class="text-center space-y-4">
             <h3 class="text-xl font-bold mb-4">
                 Recrutements
             </h3>
@@ -145,12 +237,12 @@
                 Politique transparente
             </p>
         </div>
-        <div class="text-center md:text-right">
-            <button class="bg-white text-green-600 animate-bounce duration-800 ease-out px-6 py-3 rounded-full">
+        <div class="justify-self-center md:justify-self-end">
+            <button class="bg-white text-green-900 animate-bounce duration-800 ease-out px-6 py-3 mb-2 rounded-full">
                 Contactez-nous
             </button>
-            <h3 class="text-xl font-bold mb-4">
-                parteneuriat
+            <h3 class="text-xl font-bold mt-6 mb-4">
+                partenariat
             </h3>
             <p>
                 appel à candidature
@@ -161,7 +253,7 @@
             <p>
                notre historique
             </p>
-        </div>
+         </div>
     </div>
     <div class="text-center mt-6">
         <p>
@@ -170,4 +262,4 @@
     </div>
 </footer>
 </body>
-</html>g
+</html>
